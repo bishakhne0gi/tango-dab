@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    font-weight: bolder;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    overflow: hidden;
+    position: fixed;
+    background-color: rgb(3, 3, 3);
+    padding: 20px 4px;
+    width: 100%;
+    z-index: 2;
+}
+#navbar ul{
+    display: flex;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    font-family: 'Yomogi', cursive;
+    position: sticky;
+    color: white;
+    text-decoration: none;
+    padding: 7px 39px;
+    
+}
+#navbar li a:hover{
+    color: rgb(177, 177, 177);
+}
+#introSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white; 
+    align-items: center;
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgb(0, 0, 0)), url(https://cdn.pixabay.com/photo/2017/06/02/17/47/friendship-2366955_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: 'Zen Loop', cursive;
+
+}
+.banner{
+    letter-spacing: 15px;
+    font-size: 4rem;
+}
+.small{
+    font-style: italic;
+    font-size: 19px;
+    letter-spacing: 5px;
+}
+.btn {
+    cursor: pointer;
+    float: left;
+    font-family: 'Philosopher', sans-serif;
+    display: block;
+    margin:107px auto;
+    width: 250px;
+    border-radius: 0px;
+    height: 75px;
+    font-size: 37px;
+    line-height: 70px;
+    overflow: hidden;
+    text-align: center;
+    text-shadow: 0 0 0  rgb(221, 221, 221);
+    transition: all .9s ease;
+    color: transparent !important;
+    transition: all .5s ease; 
+    font-family: 'Qahiri', sans-serif;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    letter-spacing: 38px;
+}
+    
+  
+  .txt-type > .txt {
+    border-right: 0.2rem solid rgb(207, 207, 207); }
+
+
+#missionSection{
+    height: 78vh;
+    background-color: rgb(219, 218, 218);
+
+}
+#missionSection  h3{
+    font-size: 29px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Yomogi', cursive;
+    letter-spacing: 14px;
+}
+#missionSection  h2{
+  padding: 10px;
+}
+.sub{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+  letter-spacing: 14px;
+  font-family: 'Qahiri', sans-serif;
+    font-family: 'Zen Tokyo Zoo', cursive;
+  text-align: center;
+}
+.disppear{
+  font-weight: bolder;
+  animation-name: dont;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  opacity: 100%;
+}
+@keyframes dont{
+  from{
+    opacity: 100%;
+  }
+  to{
+    opacity: 0%;
+  }
+}
+  .card {
+    display: inline-block;
+    font-family: 'Yomogi', cursive;
+    background: url(https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764_960_720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    max-width: 320px;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+    box-shadow: 5px 8px 12px 2px rgb(255 163 135 / 20%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transform: scale(0.7);
+    z-index: -1;
+}
+  
+  
+  .card-content {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 10%,
+      rgba(0, 0, 0, 0.4) 20%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    padding: 1em 2em;
+    color: white;
+    transform: translateY(24em);
+    transition: ease-in-out 0.5s;
+    height: 100%;
+  }
+  
+  .card-titel {
+    position: relative;
+  }
+  .card:hover {
+    transform: scale(0.8);
+  }
+  .card:hover .card-titel::after {
+    transform: translateX(-10%);
+  }
+  .card:hover .card-content {
+    transform: translateY(0);
+  }
+  .card-titel::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color:rgb(4, 184, 160);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-90%);
+    transition: ease-in-out 0.5s;
+    transition-delay: 0.5s;
+  }
+  .card-button {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(4, 184, 160);
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .card-button:hover,
+  .card-button:focus {
+    background-color: grey;
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .card{
+      max-width: 285px;
+      padding: 1rem 1rem;
+    }
+}
+#sponsorSection {
+    height: 61vh;
+    background-color: rgb(192, 189, 189);
+
+}
+#sponsorSection h3{
+    font-size: 29px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Yomogi', cursive;
+    letter-spacing: 14px;
+}
+#sponsors{
+  height: 80%;
+  margin: 2px auto;
+  justify-content: center;
+  max-width: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.spImage{
+  filter: grayscale(100%);
+  height: 32%;
+  margin: 100px;
+}
+.spImage:hover{
+  cursor: pointer;
+  filter: grayscale(0%);
+}
+#footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+    font-family: 'Baloo 2', cursive;
+}
+#footer h3{
+  padding: 14px;
+}

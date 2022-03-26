@@ -1,0 +1,29 @@
+html
+  head
+    title Dance Website 
+    style
+      include ../static/contact.css
+  body
+    nav#navbar
+        ul
+            li #[a(href='/') Home ]
+            li #[a(href='/') Our Mission ]
+            li #[a(href='/') Sponsors]
+            li #[a(href='/') Register]
+    section#formSection 
+        div.banner Register Now
+        form(action="/contact", method='post', class='myform')
+          input(type="text", class='myInput', name='name', placeholder="Enter your name") 
+          input(type="phone", class='myInput', name='phone', placeholder="Enter your number") 
+          input(type="email", class='myInput', name='email', placeholder="Enter your mail") 
+          input(type="text", class='myInput', name='address', placeholder="Enter your address") 
+          input(type="text", class='myInput', name='desc', placeholder="Enter your desc") 
+          button#btn
+            p#btnText Submit
+            .check-box
+                svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 50 50')
+                path(fill='transparent' d='M14.1 27.2l7.1 7.2 16.7-16.8')
+    footer#footer 
+        h3 © N E O G I' 2 1
+    script
+      include ../static/index.js

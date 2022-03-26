@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    overflow: hidden;
+    position: fixed;
+    background-color: rgb(3, 3, 3);
+    padding: 20px 4px;
+    width: 100%;
+    z-index: 2;
+}
+#navbar ul{
+    display: flex;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    font-family: 'Yomogi', cursive;
+    position: sticky;
+    color: white;
+    text-decoration: none;
+    padding: 7px 39px;
+    font-weight: bolder;
+    
+}
+#navbar li a:hover{
+    color: rgb(177, 177, 177);
+}
+#formSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white; 
+    align-items: center;
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgb(0, 0, 0)), url(https://cdn.pixabay.com/photo/2016/11/22/19/26/adult-1850184_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: 'Zen Loop', cursive;
+
+}
+.banner{
+    letter-spacing: 15px;
+    font-size: 4rem;
+}
+.myform{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 12px auto;
+    font-family: 'Zen Loop', cursive;
+}
+input{
+    width: 50%;
+    margin: 15px;
+    padding: 13px;
+    border-radius: 10px;
+    border-style: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+button {
+    width: 241px;
+    height: 50px;
+    margin: 12px;
+    border: 0;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  button:hover{
+      background-color: white;
+      color: black;
+      transition: 2s;
+      ;
+  }
+
+  .check-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    box-shadow: 0 0 12px -2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: -40px;
+    opacity: 0;
+  }
+
+  
+  #footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+    font-family: 'Baloo 2', cursive;
+}
+#footer h3{
+  padding: 14px;
+}

@@ -1,0 +1,64 @@
+doctype html
+html
+  head
+    title  Dance Website 
+    link(rel='icon' type='image/png' href='http://example.com/myicon.png')
+    style
+      include ../static/style.css
+      
+  body
+    nav#navbar
+        ul
+            li #[a(href='#introSection') Home ]
+            li #[a(href='#missionSection') Our Mission ]
+            li #[a(href='#sponsorSection') Sponsors]
+            li #[a(href='/contact') Register]
+    section#introSection 
+        div.banner Welcome To Tango Dab 
+        div.small 
+          p Tap ur feet here
+        .hover-section
+          a.btn D
+            span.txt-type(data-wait='3000', data-words='["ance", "ab", "ope"]')  
+    
+    section#missionSection 
+        h3 Our Mission
+        .sub 
+          h2.disppear Don't 
+          h2 lose 
+          h2 your goal
+
+        .card
+          .card-content
+            h1.card-titel Lorem ipsum
+            p.card-description
+              | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliqdolores et ea rebumt amet.
+            a.card-button Lorem 
+        .card
+          .card-content
+            h1.card-titel Lorem ipsum
+            p.card-description
+              | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliqdolores et ea rebumt amet.
+            a.card-button Lorem 
+        .card
+          .card-content
+            h1.card-titel Lorem ipsum
+            p.card-description
+              | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliqdolores et ea rebumt amet.
+            a.card-button Lorem 
+        .card
+          .card-content
+            h1.card-titel Lorem ipsum
+            p.card-description
+              | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliqdolores et ea rebumt amet.
+            a.card-button Lorem 
+    section#sponsorSection 
+        h3 Our Sponsors
+        #sponsors  
+          img(src="http://logok.org/wp-content/uploads/2014/06/Microsoft-logo-m-box-880x660.png",class="spImage")
+          img(src="http://logok.org/wp-content/uploads/2015/01/Amazon-logo-880x660.png",class="spImage")
+          img(src="http://logok.org/wp-content/uploads/2014/06/intel-logo-2020-768x576.png",class="spImage")
+    footer#footer 
+        h3 © N E O G I' 2 1
+    script
+      include ../static/index.js
